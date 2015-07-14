@@ -1,0 +1,2 @@
+module UserScaffoldsHelper
+end

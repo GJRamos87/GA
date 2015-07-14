@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @user_scaffold.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @user_scaffold.last_name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @user_scaffold.age %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user_scaffold.email %>
+</p>
+
+<%= link_to 'Edit', edit_user_scaffold_path(@user_scaffold) %> |
+<%= link_to 'Back', user_scaffolds_path %>

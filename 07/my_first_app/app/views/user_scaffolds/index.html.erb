@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing User Scaffolds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_scaffolds.each do |user_scaffold| %>
+      <tr>
+        <td><%= user_scaffold.first_name.upcase %></td>
+        <td><%= user_scaffold.last_name %></td>
+        <td><%= user_scaffold.age %></td>
+        <td><%= user_scaffold.email %></td>
+        <td><%= link_to 'Show', user_scaffold %></td>
+        <td><%= link_to 'Edit', edit_user_scaffold_path(user_scaffold) %></td>
+        <td><%= link_to 'Destroy', user_scaffold, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User scaffold', new_user_scaffold_path %>

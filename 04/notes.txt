@@ -1,0 +1,29 @@
+Hashes always start with a { and end with }
+
+#Hash  
+Starts with a curly brace
+Similar to Array but not limited to integers 
+Contains Hash Rockets 
+Contains Key Value Pairs
+Can be any types of data
+
+#nil
+Emptiness of souls
+
+#Class 
+They represent a thing 
+they can perform actions 
+actions are performed with methods you on the class 
+
+class MyAwesomeClass
+end
+
+my_awesome_object = MyAwesomeClass.new
+
+#attr_accessor 
+
+attr_accessor :name, :age, :favorite_food
+
+
+guard = Use that SHIT instead of Watchify
+
