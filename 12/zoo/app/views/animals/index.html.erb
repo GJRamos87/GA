@@ -1,0 +1,17 @@
+<% @animals.each do |animal| %>
+	<p><%= animal.id %></p>
+	<%= animal.name %><span>:</span>
+	<%= animal.gender %>
+	<%= animal.age %>
+	<%= image_tag animal.image %>
+<% end %>
+
+
+GET	/images/new	imagess#new	return an HTML form for creating the images
+POST	/images	imagess#create	create the new images
+GET	/images	imagess#show	display the one and only images resource
+GET	/images/edit	imagess#edit	return an HTML form for editing the images
+PATCH/PUT	/images	imagess#update	update the one and only images resource
+DELETE	/images
+     
+

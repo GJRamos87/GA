@@ -1,0 +1,9 @@
+<%# @product.inspect %>
+
+<%= form_for @product do |form| %>
+	Name: <%= form.text_field :name %>
+	<br>
+	Price: <%=form.text_field :price %>
+
+	<%= form.submit "Add product!" %>
+<% end %>

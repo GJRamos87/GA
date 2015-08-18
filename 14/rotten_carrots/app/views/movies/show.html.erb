@@ -1,0 +1,6 @@
+<h1><%= @movie.title %></h1>
+
+<% @movie.reviews.each do |r| %>
+	<%= r.content %>
+	<hr>
+	<% end %>

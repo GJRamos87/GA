@@ -1,0 +1,13 @@
+<%= form_for @user do |form| %>
+  <p>
+    Filename:
+    <%= form.text_field :email %>
+  </p>
+
+  <p>
+    Caption:
+    <%= form.text_field :name %>
+  </p>
+
+  <%= form.submit "Update Info!" %>
+<% end %>

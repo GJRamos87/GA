@@ -1,0 +1,12 @@
+<%= @companies.length %>
+
+<hr />
+
+<% @companies.each do |company| %>
+	<p><%= company.id %></p>
+	<%= company.name %>
+	<%= company.created_at %>
+	<%= company.updated_at %>
+<% end %>
+
+<!-- HTML COMMENT -->

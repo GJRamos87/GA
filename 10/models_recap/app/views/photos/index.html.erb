@@ -1,0 +1,8 @@
+<!--Based on HW we are only supposed to print album name and description - did not print out some of the ruby below on purpose.-->
+<% @albums.length %>
+<% @albums.each do |album| %>
+	<p><% album.id %></p>
+	<%= album.name %><span>:</span>
+	<% album.creator_name %>
+	<%= album.description %>
+<% end %>

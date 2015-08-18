@@ -1,0 +1,13 @@
+<%= form_for @photo do |form| %>
+  <p>
+    Filename:
+    <%= form.text_field :filename %>
+  </p>
+
+  <p>
+    Caption:
+    <%= form.text_field :caption %>
+  </p>
+
+  <%= form.submit "Update Photo!" %>
+<% end %>

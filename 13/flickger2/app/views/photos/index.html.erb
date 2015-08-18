@@ -1,0 +1,13 @@
+<h1><%= link_to "Add a photo", new_photo_path %></h1>
+
+<% @photos.each do |photo| %>
+  <p>
+    <%= link_to photo_path(id: photo) do %>
+      <%= image_tag photo.filename, size: "100x100" %><br>
+    <% end %>
+
+    <%= link_to "Edit" , edit_photo_path(id: photo) %>
+
+    <em><%= photo.caption %></em>
+  </p>
+<% end %>

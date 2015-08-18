@@ -1,0 +1,23 @@
+<%# @product.inspect %>
+
+<style type="text/css">
+div {
+	border: 1px solid #eee;
+  background-color: #7D7DA2;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+</style>
+<div>
+<h1>Product_Management</h1>
+<%= form_for @product do |form| %>
+	Name: <%= form.text_field :name %>
+	<br>
+	Price: <%=form.text_field :price %>
+	<br>
+	<%= form.submit "Woooohoooo!" %>
+<% end %>
+
+</div>

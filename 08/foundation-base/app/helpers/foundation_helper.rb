@@ -1,0 +1,2 @@
+module FoundationHelper
+end

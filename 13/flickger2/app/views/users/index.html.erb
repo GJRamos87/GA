@@ -1,0 +1,11 @@
+<h1>This is your Users Directory</h1>
+<%= @users.length %>
+<% @users.each do |user| %>
+	<p><b> <%= user.name %> </b></p>
+	<p> <%= user.email %> </p>
+	<%= link_to "Edit" , edit_user_path(id: user) %>
+<% end %>
+
+</br>
+
+<%= link_to "Add New User", "users/new", data: { confirm: "Are you sure?" } %>
