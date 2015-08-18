@@ -1,0 +1,78 @@
+
+
+    
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Create Offer</a></li>
+            <li><a href="#">Import</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Welcome current_user</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <h4>You are logged in as</h4>
+              <span class="text-muted">George</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <h4>Last Accessed</h4>
+              <span class="text-muted">Date - Time</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <h4>Your Email Address is</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <h4>Test</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div>
+
+          <h2 class="sub-header">Offer Management</h2>
+          <div class="table-responsive">
+          
+
+<div class="row">
+  <div class="col-md-12"
+
+    <p id="notice"><%= notice %></p>
+
+    <h1>Listing Users</h1>
+
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Name</th>
+          <th>Bio</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @users.each do |user| %>
+          <tr>
+            <td><%= user.email %></td>
+
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+  </div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+ 
+
+
