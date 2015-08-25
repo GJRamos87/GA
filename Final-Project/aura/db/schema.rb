@@ -11,15 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150818001404) do
+ActiveRecord::Schema.define(version: 20150825003441) do
 
   create_table "offers", force: :cascade do |t|
     t.string   "offer_title"
     t.string   "description"
     t.string   "price"
     t.string   "active"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.string   "category"
+    t.text     "offer_description"
+    t.string   "offerimage"
   end
 
   create_table "users", force: :cascade do |t|
@@ -35,6 +38,8 @@ ActiveRecord::Schema.define(version: 20150818001404) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "firstname"
+    t.string   "lastname"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
