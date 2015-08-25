@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
 
 
 	/*
@@ -21,10 +22,19 @@ body {
 
 .coolBlue {
   color: rgb(245, 173, 63) !important;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.blue {
+  color: #337ab7 !important;
 }
 
 .thumbnail img {
   height:300px;
+}
+
+.d-links {
+  font-size: 16px;
 }
 
 .jumbotron {
